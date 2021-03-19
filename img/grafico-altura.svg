@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="320px"
+   height="375px"
+   viewBox="0 0 320 375"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="grafico-altura.svg">
+  <defs
+     id="defs815">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1655">
+      <stop
+         style="stop-color:#d0992b;stop-opacity:1"
+         offset="0"
+         id="stop1651" />
+      <stop
+         style="stop-color:#626262;stop-opacity:0;"
+         offset="1"
+         id="stop1653" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1647">
+      <stop
+         style="stop-color:#0e0e0e;stop-opacity:1"
+         offset="0"
+         id="stop1643" />
+      <stop
+         style="stop-color:#808080;stop-opacity:0;"
+         offset="1"
+         id="stop1645" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 187.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="320 : 187.5 : 1"
+       inkscape:persp3d-origin="160 : 125 : 1"
+       id="perspective1418" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1414"
+       is_visible="true"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       simplifyindividualpaths="false"
+       simplifyJustCoalesce="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1647"
+       id="linearGradient1649"
+       x1="153.78558"
+       y1="-84.898376"
+       x2="155.69791"
+       y2="203.125"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.8491211e-7,-3.2519531e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1655"
+       id="linearGradient1657"
+       x1="46.606602"
+       y1="65.294701"
+       x2="46.567539"
+       y2="71.232498"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.1171875,0.28125)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1655"
+       id="linearGradient1673"
+       x1="142.47845"
+       y1="65.294693"
+       x2="142.47064"
+       y2="78.502312"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.0390625,0.234375)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1655"
+       id="linearGradient1681"
+       x1="261.875"
+       y1="65"
+       x2="262.17969"
+       y2="136.13281"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.0390625,0.59375)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.2"
+     inkscape:cx="97.698465"
+     inkscape:cy="294.58221"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1294"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-43.31029,19.445436"
+       orientation="0,1"
+       id="guide1373"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="10.606602,216.55145"
+       orientation="1,0"
+       id="guide1375"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="313.77863,179.42835"
+       orientation="1,0"
+       id="guide1377"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="77.1875,171.875"
+       orientation="0,1"
+       id="guide1436"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata818">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#6d6d6d;stroke-width:0.62362206;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.36738,65.294703 H 313.53941 Z"
+       id="path1379"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b3b3b3;fill-opacity:0.97647059;stroke:none;"
+       x="23.812817"
+       y="43.079849"
+       id="text1472"><tspan
+         sodipodi:role="line"
+         id="tspan1575"
+         x="23.812817"
+         y="43.079849">estación espacial</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1577"
+         x="23.812817"
+         y="53.079849"> internacional</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2">
+    <rect
+       style="opacity:0.91000001;fill:url(#linearGradient1649);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.43921569"
+       id="rect1641"
+       width="303.41125"
+       height="55.294704"
+       x="10.36738"
+       y="9.9999943" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       x="38.651649"
+       y="83.854904"
+       id="text1468"><tspan
+         y="83.854904"
+         x="38.651649"
+         id="tspan1571"
+         sodipodi:role="line">420 km.</tspan></text>
+    <path
+       style="fill:#fff7f7;stroke:url(#linearGradient1657);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.43921569;fill-opacity:1"
+       d="m 46.72379,65.57595 v 1.02929 2.91632 z"
+       id="path1384"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <ellipse
+       style="opacity:0.91000001;fill:#f97903;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.63614535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1441-3"
+       cx="46.789661"
+       cy="-74.827377"
+       rx="1.9980545"
+       ry="1.9818895"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="opacity:0.91000001;fill:#f97903;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.63614535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="p-km-usd"
+       cx="262.32327"
+       cy="-141.78676"
+       rx="1.9980545"
+       ry="1.9818895"
+       transform="scale(1,-1)"
+       inkscape:label="#path1441-3-1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fa7903;fill-opacity:0.90980392;stroke:none;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+       x="252.69827"
+       y="152.86098"
+       id="n-km-usd"
+       inkscape:label="#text"><tspan
+         sodipodi:role="line"
+         id="tspan1619">632km</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b3b3b3;fill-opacity:0.9758454;stroke:none"
+       x="112.32327"
+       y="23.322037"
+       id="text1547"><tspan
+         sodipodi:role="line"
+         id="tspan1627"
+         x="112.32327"
+         y="23.322037">altura de la deuda,</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1629"
+         x="112.32327"
+         y="33.322037">apilando los billetes</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1631"
+         x="112.32327"
+         y="43.322037">de la denominación</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1633"
+         x="112.32327"
+         y="53.322037"> seleccionada.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="166.97942"
+       y="-69.294693"
+       id="text1553"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         x="166.97942"
+         y="-62.216568"
+         id="tspan1565" /></text>
+    <g
+       id="g1725">
+      <path
+         inkscape:label="#path1388"
+         inkscape:connector-curvature="0"
+         id="a-km-pe"
+         d="M 142.51751,65.529069 V 77.725553 Z"
+         style="fill:#cccccc;stroke:url(#linearGradient1673);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.43921569" />
+      <ellipse
+         inkscape:label="#path1441"
+         transform="scale(1,-1)"
+         ry="1.8889369"
+         rx="1.9980545"
+         cy="-82.751343"
+         cx="142.60629"
+         id="p-km-pe"
+         style="opacity:0.91000001;fill:#f27400;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.38689455;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         inkscape:label="#text1487"
+         transform="scale(1.0485426,0.95370471)"
+         id="n-km-pe"
+         y="97.493149"
+         x="124.73594"
+         style="font-style:normal;font-weight:normal;font-size:7.62959983px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fa7903;fill-opacity:0.90980392;stroke:none;stroke-width:0.95370471;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+         xml:space="preserve"><tspan
+           id="tspan1621"
+           sodipodi:role="line">112km</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1502"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1504"><rect
+           id="rect1506"
+           width="119.32427"
+           height="54.358833"
+           x="129.48892"
+           y="337.43497" /></flowRegion><flowPara
+         id="flowPara1508"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1510"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1512"><rect
+           id="rect1514"
+           width="67.617088"
+           height="41.542522"
+           x="180.31223"
+           y="355.55457" /></flowRegion><flowPara
+         id="flowPara1516"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b3b3b3;fill-opacity:0.97101452;stroke:none"
+       x="231.44354"
+       y="31.896591"
+       id="text1520"><tspan
+         sodipodi:role="line"
+         id="tspan1635"
+         x="231.44354"
+         y="31.896591">altura de la deuda,</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1637"
+         x="231.44354"
+         y="41.896591">apilando billetes </tspan><tspan
+         sodipodi:role="line"
+         id="tspan1639"
+         x="231.44354"
+         y="51.896591">de 1usd</tspan></text>
+    <path
+       style="fill:#808080;stroke:url(#linearGradient1681);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.43921569"
+       d="m 262.22656,135.28125 -0.3125,-69.6875 z"
+       id="a-km-usd"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path1625" />
+  </g>
+</svg>

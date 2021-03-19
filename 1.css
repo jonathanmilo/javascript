@@ -1,68 +1,165 @@
+/* fondo: #26282B
+inferior derecho:  #18181a
+superior izquierdo:#4a4a4b 
+label y footer: rgba(224, 107, 11, 0.76)
+texto del boton: (202, 117, 48)
+option text:rgb(187, 184, 184)*/
+
+
 h1,h2{
-    color: rgb(23, 82, 133);
-    background-color: lavender;
-    font-family: 'Lato', sans-serif;
+   
+    
     align-items: center;
 
+}
+body{  background: #26282B;}
+.form{
+    display: flexbox;
+    position: relative;
+    border-radius: 65px;
+    background:#26282B;
+    box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+min-width: 200px;
+width:35%;
+align-content: center;
+}
+.form label,footer{
+    display: flex;
+    color: #6b6b77 ;
+    font-family: Roboto;
+    font-size: 21px;
+    margin-left: 7%;
+}
+#opcionPresidencias {
+   margin-top: 5%;
+    margin-left: 0px;
+    max-width: 60%;
+    height: 2rem;
+    border-radius: 2em;
+    color: rgb(187, 184, 184);
+    background:transparent;
+    box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
 }
 .presidentes{
-    background-color: rgba(224, 225, 231, 0.877);
+    position: relative;
+    justify-content: center;
+    margin: 0%20%3%5vw;
+    padding-top: 4%;
+    width: fit-content;
+}
+.form select{
+    position: relative;
     display: flex;
-    align-content: center;
-    align-items: center;
-    width: 30%;
-    margin-left: 30%;
-    border-radius: 5px;
-    padding: 1px;
-    padding-left: 10%;
+    margin: 0%20%3%45%;
+    background: transparent;
+    box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+    color: rgb(187, 184, 184);
+    height: 2rem;
+    border-radius: 2em;
+    border-color: transparent;
+}
+.form .boton{
+position: relative;
 
-    margin-bottom: 2rem;
+background: transparent;
+box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+color: rgb(202, 117, 48);
+height: 2rem;
+border-radius: 2em;
+border-color: transparent;
+margin: 0%20%3%40%;
+
 }
-.selector{
-    background-color: rgb(194, 193, 193);
+
+.form footer {
     display: flex;
-    align-content: center;
-    align-items: center;
-    width: 30%;
-    margin-left: 30%;
-    border-radius: 5px;
-    padding: 4px;
-    padding-left: 10%;
-    font: 'Lato';
-    margin-bottom: 3rem;
+    position: relative;
+    justify-content: center;
+    border-radius: 5%;
 }
-.opciones_pesos{
-    
-    width: 22%;
-    border: 1px solid ;
-    border-color:  rgb(23, 82, 133);
-    border-radius: 6px;
-    padding: 2%;
-    margin-left: 40%;
-    position: static;    
-}
-.boton{
+.form input{
+    position: relative;
     display: flex;
     justify-content: center;
-    width:20%;
-    margin-left: 43%;
-    background-color: rgb(128, 142, 223);
-    color: beige;
-    height: 3rem;
-    justify-items: center;
-    padding-top: 1%;
+    margin: 0%20%3%5vw;
+    background: transparent;
+    box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+    color: rgb(187, 184, 184);
+    height: 2rem;
+    border-radius: 2em;
+    border-color: transparent;
+    width: fit-content;
+}
+
+#seccion-grafico{
+    display: none;
+    width: fit-content;
+    justify-content:center;
+    align-content: stretch;
     position: absolute;
-    margin-top: 4rem;
+    position: relative;
+    border-radius: 65px;
+    background:#26282B;
+    box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+
+
 }
-#moneda:active .opciones_pesos{
+#seccion-grafico li{
+    display: inline-table;
+    list-style: none;
+   position: relative;
+   max-width: 5vw;
+}
+#secccion-grafico p{
+    color: rgb(202, 117, 48);
+}
+#estacion-espacial{
     display: flex;
+    height: 210px;
+    width: 1vw ;
+    border: 1px solid navajowhite;
 }
-#superficie{
-    width: 5rem;
-    height: 5rem;
-    background-color: rgba(45, 63, 221, 0.664);
-    color: deeppink;
-} 
-#informe{ 
-    margin-top: 10rem;
+#seccion-grafico figure{
+    display: flex;
+    height: 210px;
+    width: 1vw;
+    border: 1px solid navajowhite;
+    border-radius: 9%;
+}
+#informe{
+    display: none;
+    width: auto;
+    flex-direction: column;
+    list-style: none;
+    margin: 10% 10%;
+}
+#informe li{list-style: none;
+position: relative;
+width: fit-content;
+margin-left: 5%; }
+
+#informe ul{
+    display: inline-table;
+    display: ruby;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    color: rgb(187, 184, 184);
+    font-size: 1.2rem;
+}
+#informe ul img{
+    width: 5vw;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #18181a, -3px -5px 5px #4a4a4b;
+}
+#cara-presidente{
+    position: relative;
+    display: flex;
+    width: 9em;
+    height: 8em;
+    justify-content: center;
+    align-self: center;
+border-radius: 50%;
+background:#26282B;
+box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
+margin-top: 3%;
 }
