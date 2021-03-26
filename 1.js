@@ -54,6 +54,7 @@ superficie_verticalNeta_1usd= Number(deudaNeta * 0.00000012).toFixed(2) ;
 superficie_verticalTotal_1usd=  Number(deudaTotal * 0.00000012).toFixed(2) + " km ";
 
 
+
 }
 
 function grafica(){document.getElementById("seccion-grafico").style.display="flex";
