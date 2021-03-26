@@ -21,7 +21,7 @@ body{  background: #aeb1b6;}
     background:  #aeb1b6;
     box-shadow: 38px 38px 64px #43434d, -38px -38px 64px #dddfe2;
 min-width: 200px;
-width:35%;
+width:96%;
 align-content: center;
 }
 .form label,footer{
@@ -82,7 +82,6 @@ margin: 0%20%3%40%;
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 0%20%3%5vw;
     background: transparent;
     box-shadow: 4px 4px 15px #18181a, -38px -38px 64px #4a4a4b;
     color: rgb(63, 60, 60);
@@ -90,6 +89,7 @@ margin: 0%20%3%40%;
     border-radius: 2em;
     border-color: transparent;
     width:  inherit;
+    margin-bottom: 2%;
 }
 
 #seccion-grafico{
