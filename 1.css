@@ -106,11 +106,14 @@ margin: 0%20%3%40%;
 
 }
 #seccion-grafico li{
-    display: inline-table;
+    display: inline-grid;
     list-style: none;
-   position: relative;
-   max-width: 5vw;
+    position: relative;
+    max-width: max-content;
+    width: 25vw;
+    margin-left: -4%;
 }
+
 #seccion-grafico p{
     color: rgb(202, 117, 48);
 }
@@ -129,8 +132,20 @@ margin: 0%20%3%40%;
     background-color: rgba(236, 236, 232, 0.712);
     box-shadow: 0px -1px 18px -3px #dddfe2;
 }
+
+@media only screen and (max-width: 767px) {.seccion-grafico li{
+    display: table-cell;
+    list-style: none;
+    position: relative;
+    width: 1vw;
+}
+#seccion-grafico footer{
+    font-size: x-small;
+}}
 #seccion-grafico footer{
     color: beige;
+    /* font-size: x-small; */
+    
 }
 #informe{
     display: none;
