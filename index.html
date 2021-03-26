@@ -9,10 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
-  
+    <link rel="stylesheet" href="1.css">
     <script defer src="./1.js"></script>
     <script defer src="./infoDatos.js"></script>
-    <link rel="stylesheet" href="/1.css">
 </head>
 <body>
    
@@ -43,51 +42,51 @@
       <input type="number"  value="500"  id="input_denominacionBillete">
     
    
-    <button class="boton" onclick="informar()">simulación</button>
+    <button class="boton" onclick="DATOS(),informar()">simulación</button>
   </div>
     <div id="informe" class="form">
       <img id="cara-presidente" src="" alt="">
-    <ul>
+    <ol style="display: flow-root;" >
       <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
-      <li>Deuda contraida en su mandato <p id="d1"></p></li>
-      <li>Deuda total Argetina al finalizar su mandato <p id="d2" ></p></li>
-    </ul>
-    <ul>
+      <li>Deuda contraída en su mandato <p id="d1"></p></li>
+      <li>Deuda total Argentina al finalizar su mandato <p id="d2" ></p></li>
+    </ol>
+    <ol id="dolar-a" >
       <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
       <li>superficie horizontal  de su deuda <p id="d3" ></p></li>
       <li>superficie horizontal de deuda Arg.
         al finalizar su mandato <p id="d4" ></p></li>
         
-    </ul>
-    <ul>
+    </ol>
+    <ol id="dolar-b" >
       <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
       <li>altura de  su deuda apilada en billetes <p id="d5" ></p></li>
       <li>altura de deuda Arg. al finalizar su  mandato <p id="d6" ></p></li>
-    </ul>
-    <ul>
+    </ol>
+    <ol id="pesos-a" >
       <img src="./img/pesoarg-removebg-preview.png" alt="">
       <li>superficie horizontal  de su deuda,
         en billetes de la denominación seleccionada <p id="d7" ></p></li>
-        <li>superficie horizontal de deuda Arg.
+        <li>superficie horizontal de la deuda Arg.
           al finalizar su mandato, en billetes
          de la denominación seleccionada <p id="d8" ></p></li>
-    </ul>
-    <ul>
+    </ol>
+    <ol id="pesos-b" >
       <img src="./img/pesoarg-removebg-preview.png" alt="">
       <li>altura de  su deuda apilada en billetes,
         de la denominación seleccionada <p id="d9" ></p></li>
         <li>altura de deuda Arg. al finalizar su  mandato,
           apilando billetes de la denominación seleccionada <p id="d10" ></p></li>
-    </ul>
+    </ol>
 
-    <p>fuente: Ministerio de Economía Argentino</p>
+    <p id="fuente">fuente: Ministerio de Economía Argentino</p>
    </div>
  <section id="seccion-grafico">
  <ul>
    
    <li><footer>distancia entre la Tierra y la estacion espacial internacional</footer>
     <figure id="estacion-espacial"></figure>
-      <p>420km</p>
+      <p style="color: rgba(236, 236, 232, 0.712);">420km</p>
   </li>
    <li> <footer>altura de la deuda,($ arg)
     apilando los billetes 
