@@ -50,7 +50,7 @@ superficie_verticalTotal_pesos= Number(((deudaTotal * valorPeso)/tipo_billetePes
 superficie_horizontalNeta_1usd= Number(deudaNeta * 0.10338947064).toFixed(2) +" m2";
 superficie_horizontalTotal_1usd= Number(deudaTotal * 0.10338947064).toFixed(2) + " m2";
 
-superficie_verticalNeta_1usd= Number((deudaNeta/tipo_billetePesos) * 0.00000012).toFixed(2) ; 
+superficie_verticalNeta_1usd= Number(deudaNeta * 0.00000012).toFixed(2) ; 
 superficie_verticalTotal_1usd=  Number(deudaTotal * 0.00000012).toFixed(2) + " km ";
 
 
