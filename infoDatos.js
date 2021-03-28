@@ -4,4 +4,9 @@
 let Macri= new presidente( "Mauricio Macri",82400000000,323065000000,superficie_horizontalNeta_1usd,superficie_horizontalTotal_1usd,superficie_verticalNeta_1usd,superficie_verticalTotal_1usd,superficie_horizontalNeta_Pesos,superficie_horizontalTotal_Pesos,superficie_verticalNeta_Pesos,superficie_verticalTotal_pesos);
 let Cristina= new presidente("Cristina Fernandez de kirchner",75554000000,240665000000,superficie_horizontalNeta_1usd,superficie_horizontalTotal_1usd,superficie_verticalNeta_1usd,superficie_verticalTotal_1usd,superficie_horizontalNeta_Pesos,superficie_horizontalTotal_Pesos,superficie_verticalNeta_Pesos,superficie_verticalTotal_pesos)
 
-ArrayPresidentes=[ Macri,Cristina ];*/
+ArrayPresidentes=[ Macri,Cristina ];
+
+https://www.argentina.gob.ar/coronavirus/vacuna/aplicadas
+
+https://www.batimes.com.ar/news/argentina/shipment-of-900000-sinopharm-vaccine-doses-arrives-in-argentina.phtml
+*/

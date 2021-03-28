@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=100, initial-scale=1.0">
     <title>javascript</title>   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="1.css">
+    <script  src="https://code.jquery.com/jquery-3.6.0.slim.js"integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
     <script defer src="./1.js"></script>
     <script defer src="./infoDatos.js"></script>
-    <script>document.addEventListener("DOMcontentLoad",() => { DATOS(); informar()  })</script>
+    <!-- <script>document.addEventListener("DOMcontentLoad",() => { DATOS(); informar()  })</script> -->
 </head>
 <body>
    
-   <h1>¿cuánta superfie ocuparía la deuda Argentina?</h1>
+   <h1>¿A cuántas vacunas covid-19 equivale la deuda Argentina?</h1>
    <div class="form">
      <div class="presidentes">  
     <label>seleccione la presidencia</label> 
@@ -27,11 +27,11 @@
      </div>
 
   
-    <footer for="input_tipoMoneda">seleccione el tipo de moneda</footer>
-    <select  id="input_tipoMoneda"  >
-      <option value="dólar"selected>dólar</option>
-      <option value="asignar">--</option>
-      <option value="pesos" id="moneda">pesos</option>
+    <footer for="input_tipoVacuna">seleccione la vacuna</footer>
+    <select  id="input_tipoVacuna"  >
+      <option value="pfeizer"selected>Pfeizer</option>
+      <option value="asignar">asigne valor</option>
+      <option value="cnbg" id="moneda">CNBG</option>
     </select>
   
     
@@ -39,8 +39,8 @@
       <footer for="valor_delPeso">valor del tipo de cambio del peso</footer>
       <input type="number" min="1" value="90.30" step="0.01" id="valor_delPeso" >
      
-      <footer for="input_denominacionBillete">denominación de los billetes</footer>
-      <input type="number"  value="500"  id="input_denominacionBillete">
+      <footer id="fooValorVacuna" for="input_ValorVacuna">valor de la vacuna (usd$)</footer>
+      <input type="number"    id="input_ValorVacuna">
     
    
     <button class="boton" onclick="DATOS(),informar()">simulación</button>
@@ -48,36 +48,19 @@
     <div id="informe" class="form">
       <img id="cara-presidente" src="" alt="">
     <ol style="display: flow-root;" >
-      <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
+      <img src="./img/dolarbillete.jpg" alt="">
       <li>Deuda contraída en su mandato <p id="d1"></p></li>
       <li>Deuda total Argentina al finalizar su mandato <p id="d2" ></p></li>
     </ol>
     <ol id="dolar-a" >
-      <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
-      <li>superficie horizontal  de su deuda <p id="d3" ></p></li>
-      <li>superficie horizontal de deuda Arg.
-        al finalizar su mandato <p id="d4" ></p></li>
-        
-    </ol>
-    <ol id="dolar-b" >
-      <img src="./img/estados-unidos-1-dolar-2001-p-india-sacagawea-moneda-de-laton-sc-usa-1-dollar-coin-removebg-preview.png" alt="">
-      <li>altura de  su deuda apilada en billetes <p id="d5" ></p></li>
-      <li>altura de deuda Arg. al finalizar su  mandato <p id="d6" ></p></li>
+      <img src="./img/vacuna.png" alt="">
+      <li>Su deuda externa en dosis <p id="d3" ></p></li>
+      <li>Deuda del país al finalizar su mandato en dosis <p id="d4" ></p></li> 
     </ol>
     <ol id="pesos-a" >
-      <img src="./img/pesoarg-removebg-preview.png" alt="">
-      <li>superficie horizontal  de su deuda,
-        en billetes de la denominación seleccionada <p id="d7" ></p></li>
-        <li>superficie horizontal de la deuda Arg.
-          al finalizar su mandato, en billetes
-         de la denominación seleccionada <p id="d8" ></p></li>
-    </ol>
-    <ol id="pesos-b" >
-      <img src="./img/pesoarg-removebg-preview.png" alt="">
-      <li>altura de  su deuda apilada en billetes,
-        de la denominación seleccionada <p id="d9" ></p></li>
-        <li>altura de deuda Arg. al finalizar su  mandato,
-          apilando billetes de la denominación seleccionada <p id="d10" ></p></li>
+      <img src="./img/pesosbillete.jpeg" alt="">
+      <li>Deuda contraída en su mandato <p id="d5" ></p></li>
+        <li>Deuda del país al finalizar su mandato <p id="d6" ></p></li>
     </ol>
 
     <p id="fuente">fuente: Ministerio de Economía Argentino</p>
@@ -86,22 +69,22 @@
  <ul>
    
    <li><footer>
-     Distancia entre la Tierra
-     y la estacion espacial internacional</footer>
-    <figure id="estacion-espacial"></figure>
-      <p style="color: rgba(236, 236, 232, 0.712);">420km</p>
+    Dosis aplicadas actuales</footer>
+    <figure id="aplicadas_actuales"></figure>
+      <p id="aplicadasNumero" style="color: rgba(236, 236, 232, 0.712);"></p>
   </li>
-   <li> <footer>Altura de la deuda,
-     ($ arg) en billetes apilados
-    del valor seleccionado
+  <li>
+    <footer>Último censo Argentina
+    </footer>
+    <figure id="personas" style="margin-bottom: 2%;"> </figure>
+      <p id="personas_N"></p>
+   
+  </li>
+   <li> <footer>Su deuda externa en dosis.
       </footer><figure id="a-km-pe"></figure> <p id="n-km-p"></p></li>
    <li><footer>
-     Altura de la deuda
-     total del país,
-     ($ dolar)
-      apilando billetes de 1 usd.
-
-   </footer> <figure id="a-km-usd"></figure><p id="n-km-usd"></p></li>
+    Deuda del país en dosis.
+</footer> <figure id="a-km-usd"></figure><p id="n-km-usd" style="margin-left:-59%;"></p></li>
  </ul>
  </section>
 </body>
