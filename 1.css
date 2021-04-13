@@ -13,15 +13,40 @@ h1,h2{
     align-items: center;
 
 }
-body{  background: #aeb1b6;}
-.form{
-    display: flexbox;
+#fondo{
+    display: flex;
     position: relative;
+    width: auto;
+}
+
+body{  background: #aeb1b6;
+overflow-x: auto;}
+
+    .container{
+        display: block;
+        height: calc(100vh - 50px);
+        min-width: 400vw;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    /* body span{display: inline-block;
+		color: grey;
+		font-weight: 300;
+} */
+
+
+
+
+
+    .form{
+    display: inline-block;
+    position: absolute;
     border-radius: 65px;
+    
     background:  #aeb1b6;
     box-shadow: 38px 38px 64px #43434d, -38px -38px 64px #dddfe2;
 min-width: 200px;
-width:36%;
+width:100vw;
 align-content: center;
 }
 .form label,footer{
@@ -61,14 +86,16 @@ align-content: center;
 }
 .form .boton{
 position: relative;
+background: transparent;
 
-background: #2d2d30;
 box-shadow: 38px 38px 64px #88888d, -38px -38px 64px #4a4a4b;
 color: rgb(202, 117, 48);
-height: 2rem;
+
 border-radius: 2em;
 border-color: transparent;
 margin: 0%20%3%40%;
+width: 25vw;
+height: 2vw;
 
 }
 
@@ -93,12 +120,13 @@ margin: 0%20%3%40%;
 }
 
 #seccion-grafico{
+    overflow-x: auto;
     display: none;
-    width: fit-content;
+    width: 100vw;
     justify-content:center;
     align-content: stretch;
     position: absolute;
-    position: relative;
+    transform: translateX(200%);
     border-radius: 65px;
     background:#26282B;
     box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
@@ -161,10 +189,13 @@ margin: 0%20%3%40%;
 }
 #informe{
     display: none;
-    width: auto;
+    width:100vw;
     flex-direction: column;
     list-style: none;
-    margin: 10% 10%;
+    overflow: hidden;
+    transform: translateX(100%);
+    translate: traslateY(100%);
+   
 }
 #informe li{list-style: none;
 position: relative;
@@ -198,4 +229,8 @@ border-radius: 50%;
 background:#26282B;
 box-shadow: 4px 4px 15px #18181a, -4px -4px 15px #f7f7f7;
 margin-top: 3%;
+}
+.caja{
+    display: inline-block;
+    position: absolute;
 }

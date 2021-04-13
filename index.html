@@ -8,17 +8,23 @@
   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet"> 
-    <script  src="https://code.jquery.com/jquery-3.6.0.slim.js"integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/jpg" href="./img/ico.png"/>
-    <script defer src="./1.js"></script>
     <script defer src="./infoDatos.js"></script>
+    <script defer src="./1.js"></script>
+    
     <link rel="stylesheet" href="1.css">
     
+    
 </head>
-<body>
+<body >
+  
    
-   <h1>¿A cuántas vacunas covid-19 equivale la deuda Argentina?</h1>
-   <div class="form">
+    <h1>¿A cuántas vacunas covid-19 equivale la deuda Argentina?</h1>
+  <a href="form"></a><a href="#informe"></a><a href="#seccion-grafico"></a>
+   <div class="form" id="slide1">
+    
      <div class="presidentes">  
     <label>seleccione la presidencia</label> 
     <select class="" widht="30%" id="opcionPresidencias">
@@ -35,39 +41,43 @@
       <option value="cnbg" id="moneda">CNBG</option>
     </select>
   
-    
+    <footer id="fooValorVacuna" for="input_ValorVacuna">valor de la vacuna (usd$)</footer>
+    <input type="number"    id="input_ValorVacuna">
      
       <footer for="valor_delPeso">valor del tipo de cambio del peso</footer>
       <input type="number" min="1" value="90.30" step="0.01" id="valor_delPeso" >
      
-      <footer id="fooValorVacuna" for="input_ValorVacuna">valor de la vacuna (usd$)</footer>
-      <input type="number"    id="input_ValorVacuna">
-    
+     
+  
+      <button class="boton"  onclick="DATOS(),informar()" ></button> 
+      <!-- onclick="DATOS(),informar()" -->
    
-    <button class="boton" onclick="DATOS(),informar()">simulación</button>
   </div>
-    <div id="informe" class="form">
-      <img id="cara-presidente" src="" alt="">
-    <ol style="display: flow-root;" >
-      <img src="./img/dolarbillete.jpg" alt="">
-      <li>Deuda contraída en su mandato <p id="d1"></p></li>
-      <li>Deuda total Argentina al finalizar su mandato <p id="d2" ></p></li>
-    </ol>
-    <ol id="dolar-a" >
-      <img src="./img/vacuna.png" alt="">
-      <li>Su deuda externa en dosis <p id="d3" ></p></li>
-      <li>Deuda del país al finalizar su mandato en dosis <p id="d4" ></p></li> 
-    </ol>
-    <ol id="pesos-a" >
-      <img src="./img/pesosbillete.jpeg" alt="">
-      <li>Deuda contraída en su mandato <p id="d5" ></p></li>
-        <li>Deuda del país al finalizar su mandato <p id="d6" ></p></li>
-    </ol>
+  <div class="caja">
+      <div id="informe" class="form ">
+        
+        <img id="cara-presidente" src="" alt="">
+      <ol style="display: flow-root;" >
+        <img src="./img/dolarbillete.jpg" alt="">
+        <li>Deuda contraída en su mandato <p id="d1"></p></li>
+        <li>Deuda total Argentina al finalizar su mandato <p id="d2" ></p></li>
+      </ol>
+      <ol id="dolar-a" >
+        <img src="./img/vacuna.png" alt="">
+        <li>Su deuda externa en dosis <p id="d3" ></p></li>
+        <li>Deuda del país al finalizar su mandato en dosis <p id="d4" ></p></li> 
+      </ol>
+      <ol id="pesos-a" >
+        <img src="./img/pesosbillete.jpeg" alt="">
+        <li>Deuda contraída en su mandato <p id="d5" ></p></li>
+          <li>Deuda del país al finalizar su mandato <p id="d6" ></p></li>
+      </ol>
 
-    <p id="fuente">fuente: Ministerio de Economía Argentino</p>
-   </div>
- <section id="seccion-grafico">
- <ul>
+      <p id="fuente">fuente: Ministerio de Economía Argentino</p>
+      </div></div>
+   <div class="caja" >
+ <div id="seccion-grafico" class="form">
+  <ul>
    
    <li><footer>
     Dosis aplicadas actuales</footer>
@@ -85,8 +95,11 @@
       </footer><figure id="a-km-pe"></figure> <p id="n-km-p"></p></li>
    <li><footer>
     Deuda del país en dosis.
-</footer> <figure id="a-km-usd"></figure><p id="n-km-usd" style="margin-left:-59%;"></p></li>
+  </footer> <figure id="a-km-usd"></figure><p id="n-km-usd" style="margin-left:-59%;"></p></li>
  </ul>
- </section>
+ </div>
+</div>   
+
+
 </body>
 </html>
