@@ -11,6 +11,7 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/jpg" href="./img/ico.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet"> 
     <script defer src="./infoDatos.js"></script>
     <script defer src="./1.js"></script>
     
@@ -19,14 +20,16 @@
     
 </head>
 <body >
-  
-   
+  <input type="checkbox" id="gr" value="supress">
+  <button class="ir"  style="transform: translateX(10vw)"><a href="#informe">informe</a></button><button class="ir" style="transform: translateX(1vw)"><a  href="#slide1">inicio</a></button><button style="transform: translateX(20vw)" class="ir"><a   href="#seccion-grafico">gráfico</a></button>
+  <div class=" change mensaje mensajefijo">
+    <p class="mensaje mensajemovil">¿A cuántas vacunas equivale la deuda Argentina?</p>
+    <button class="bot">entrar</button>
+  </div>
+  <div class="form change" id="slide1">
     <h1>¿A cuántas vacunas covid-19 equivale la deuda Argentina?</h1>
-  <a href="form"></a><a href="#informe"></a><a href="#seccion-grafico"></a>
-   <div class="form" id="slide1">
-    
      <div class="presidentes">  
-    <label>seleccione la presidencia</label> 
+    <label >Seleccione presidencia</label> 
     <select class="" widht="30%" id="opcionPresidencias">
       <option value="Mauricio Macri">Mauricio Macri</option>
       <option value="Cristina Fernandez de Kirchner">Cristina Fernandez de Kirchner</option>
@@ -46,37 +49,33 @@
      
       <footer for="valor_delPeso">valor del tipo de cambio del peso</footer>
       <input type="number" min="1" value="90.30" step="0.01" id="valor_delPeso" >
-     
-     
-  
-      <button class="boton"  onclick="DATOS(),informar()" ></button> 
-      <!-- onclick="DATOS(),informar()" -->
+      <button class="boton"  onclick="DATOS(),informar()" >simular</button> 
    
   </div>
-  <div class="caja">
-      <div id="informe" class="form ">
+  <div class="caja change">
+      <div id="informe" class="form change ">
         
         <img id="cara-presidente" src="" alt="">
-      <ol style="display: flow-root;" >
+      <ol >
         <img src="./img/dolarbillete.jpg" alt="">
-        <li>Deuda contraída en su mandato <p id="d1"></p></li>
-        <li>Deuda total Argentina al finalizar su mandato <p id="d2" ></p></li>
+        <li>Deuda contraída en su mandato <p id="d1" ></p></li>
+        <li>Deuda total Argentina al finalizar su mandato <p id="d2" class="" ></p></li>
       </ol>
       <ol id="dolar-a" >
         <img src="./img/vacuna.png" alt="">
         <li>Su deuda externa en dosis <p id="d3" ></p></li>
-        <li>Deuda del país al finalizar su mandato en dosis <p id="d4" ></p></li> 
+        <li>Deuda del país al finalizar su mandato en dosis <p id="d4" class=""></p></li> 
       </ol>
       <ol id="pesos-a" >
         <img src="./img/pesosbillete.jpeg" alt="">
-        <li>Deuda contraída en su mandato <p id="d5" ></p></li>
-          <li>Deuda del país al finalizar su mandato <p id="d6" ></p></li>
+        <li>Deuda contraída en su mandato <p id="d5"  ></p></li>
+          <li>Deuda del país al finalizar su mandato <p id="d6" class=""></p></li>
       </ol>
 
       <p id="fuente">fuente: Ministerio de Economía Argentino</p>
       </div></div>
    <div class="caja" >
- <div id="seccion-grafico" class="form">
+ <div id="seccion-grafico" class="form change">
   <ul>
    
    <li><footer>

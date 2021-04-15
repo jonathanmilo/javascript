@@ -6,12 +6,10 @@ rgb(65, 63, 63)
 texto del boton: (202, 117, 48)
 option text:rgb(187, 184, 184)*/
 
-
 h1,h2{
-   
-    
+    font-family: karantina;
     align-items: center;
-
+    font-size: 2rem;
 }
 #fondo{
     display: flex;
@@ -19,6 +17,7 @@ h1,h2{
     width: auto;
 }
 
+.ir{z-index: 4;position: fixed;height: 1.5rem;font-family: karantina; color: black;display: none;}.ir a{text-decoration: none;margin-top: -11%; color: #0c0c0e;} 
 body{  background: #aeb1b6;
 overflow-x: auto;}
 
@@ -29,21 +28,55 @@ overflow-x: auto;}
         overflow-y: hidden;
         overflow-x: scroll;
     }
-    /* body span{display: inline-block;
-		color: grey;
-		font-weight: 300;
-} */
-
-
-
-
+.bot{height: max-content;
+    bottom: 35.2318% ;
+    font-family: karantina;
+    position: fixed !important;
+    box-shadow: 38px 38px 64px #0170ff, -38px -38px 64px #dddfe2;
+    font-size: 3rem;
+}
+.bot:hover{
+    animation-name: giro;
+    animation-duration: 3s;
+}@keyframes giro{
+    0%{transform: rotateX(0deg);box-shadow: none;}
+    20%{transform: rotateX(360deg);box-shadow: none;}
+    70%{transform: rotateX(0deg);box-shadow: none;}
+    100%{ transform:rotateX(360deg);box-shadow: none;}
+}
+#gr{
+    transform: translateX(40vw);
+    position:fixed;
+    height: 1.5rem;
+    z-index: 4;
+}
+.mensaje{display: flex;
+justify-content: center;}
+.mensajefijo{ width: 80vw;
+    position: relative;
+    margin-left: 10%;
+    margin-top: -5%;
+height: 60vw;
+background:linear-gradient(#f4f0f0, #0170ff);
+border-radius: 4%;
+transform:matrix(1,3.991e-4,-0.2,0.83258477,0,0);
+}
+.mensajemovil{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-family:Karantina;
+    display: block;
+    font-size: 3rem;
+    color: black;
+    /* transform: matrix(1, 0, 0.4, 1.5, 0, 202); */
+}
 
     .form{
     display: inline-block;
+    margin-top: 3rem;
     position: absolute;
     border-radius: 65px;
-    
-    background:  #aeb1b6;
+    background:  #aeb6af;
     box-shadow: 38px 38px 64px #43434d, -38px -38px 64px #dddfe2;
 min-width: 200px;
 width:100vw;
@@ -51,9 +84,9 @@ align-content: center;
 }
 .form label,footer{
     display: flex;
-    color: #0c0c0e ;
-    font-family: Roboto;
-    font-size: 21px;
+    color: white ;
+    font-family: karantina;
+    font-size: 2rem;
     margin-left: 7%;
 }
 #opcionPresidencias {
@@ -67,12 +100,13 @@ align-content: center;
     box-shadow: 4px 4px 15px #43434d, -38px -38px 64px #dddfe2;
 }
 .presidentes{
+    display: flex;
     position: relative;
     justify-content: center;
-    margin: 0%20%3%5vw;
+   /* margin: 0%20%3%5vw; */
     padding-top: 4%;
     width: fit-content;
-}
+}.presidentes label{transform: translateX(100%);}
 .form select{
     position: relative;
     display: flex;
@@ -120,6 +154,7 @@ height: 2vw;
 }
 
 #seccion-grafico{
+    margin-top: 3rem;margin-left: 2rem;
     overflow-x: auto;
     display: none;
     width: 100vw;
@@ -130,8 +165,6 @@ height: 2vw;
     border-radius: 65px;
     background:#26282B;
     box-shadow: 38px 38px 64px #18181a, -38px -38px 64px #4a4a4b;
-
-
 }
 #seccion-grafico li{
     display: inline-grid;
@@ -161,21 +194,23 @@ height: 2vw;
     box-shadow: 0px -1px 18px -3px #dddfe2;
 }
 #informe ol{
-   
+    display: inline-flex;
     position: relative;
-    font-family:  sans-serif;
+    font-family: karantina;
     color: rgba(0, 0, 0, 0.74);
     font-style: oblique;
-    font-size: 1.2rem;
-}
+    font-size: 1.2rem;}#informe ol :last-child{ margin-left: 10%;}
 @media only screen and (max-width: 767px) {
-    .form{ width:96%;}
+    h1,h2{font-size: 1.5rem;}
+    .mensajemovil{font-size: 1.1rem; }
+    .form{ width:96%;}; 
+    .bot{font-size: 1rem;}
     .seccion-grafico li{
     display: table-cell;
     list-style: none;
     position: relative;
-    width: 1vw;
-}
+    width: 1vw;}
+    .presidentes label{transform: translateY(-13%);}
 #seccion-grafico li{ width: 19vw;}
 #informe ol{font-size: 0.8rem;}
 #seccion-grafico footer{
@@ -188,7 +223,7 @@ height: 2vw;
     
 }
 #informe{
-    display: none;
+    display: none;margin-top: 3rem;
     width:100vw;
     flex-direction: column;
     list-style: none;
@@ -208,10 +243,7 @@ margin-left: 1%; }
 #informe p{
     display: inline-flex;
     justify-content: center;
-    color: rgb(223, 221, 219);
-    
 }
-
 #informe ol img{
     width: 15vw;
     
@@ -233,4 +265,4 @@ margin-top: 3%;
 .caja{
     display: inline-block;
     position: absolute;
-}
+}.red{background:linear-gradient(#f4f0f0, #0170ff); }.bl{color:black;}

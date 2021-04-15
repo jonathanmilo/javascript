@@ -12,6 +12,7 @@ function cetropresidencial (presidente,deudaNeta,deudaTotal){
 const macri= new cetropresidencial( "Mauricio Macri",82400000000,323065000000)
 const cfk= new cetropresidencial( "Cristina Fernandez de kirchner",75554000000,240665000000)
 
+
 let opcionPresidencias = $("#opcionPresidencias").val();
 localStorage.setItem("presidente",opcionPresidencias);
 $("#opcionPresidencias").change(()=>{
@@ -53,11 +54,12 @@ $("#input_ValorVacuna").change(
     localStorage.setItem("valorVacuna",ValorVacuna);
     }
 );
-const aplicadas= 3548656;
+const aplicadas= 5935146;
 let censo= 44939000;
 
 
 function DATOS(){
+    $(".ir").css("display","flex");
     
     if(localStorage.getItem("presidente")=="Mauricio Macri"){
         console.log(macri.presidente);deudaNeta= macri.deudaNeta;deudaTotal=macri.deudaTotal}
@@ -81,10 +83,10 @@ function DATOS(){
 
 function grafica(){$("#seccion-grafico").css("display","flex");
    $("#aplicadas_actuales").css("height",""+aplicadas* 0.00001+"px"+"");
-   $("#personas").css("height",""+censo *0.00001+"px"+""); 
+   $("#personas").css("height",""+censo *0.000002+"px"+""); 
   
-    if($("#valor_delPeso").val()>0){ $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.000001+ "px"+"");$("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
-    $("#a-km-usd").css("height",""+dosis_deuda_total * 0.000001+"px"+"");$("#n-km-usd").text(""+(Number(dosis_deuda_total)).toLocaleString("en-US")+"dosis"+"")};
+    if($("#valor_delPeso").val()>0){ $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.00000005+ "px"+"");$("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
+    $("#a-km-usd").css("height",""+dosis_deuda_total * 0.00000002+"px"+"");$("#n-km-usd").text(""+(Number(dosis_deuda_total)).toLocaleString("en-US")+"dosis"+"")};
 
 
     $("#d1").text(""+"usd"+(Number(deudaNeta)).toLocaleString("en-US")+"");
@@ -102,64 +104,53 @@ function informar(){switch($("#opcionPresidencias").val()){
 
     case "Cristina Fernandez de Kirchner": document.getElementById("informe").style.display="flex";$("#cara-presidente").attr("src","./img/cristina-sonrisa.png");grafica();break;
     default:$("#informe").html("<p>"+ "sin información"+ "</p>")} 
-  
 };
-// ()=>{$.getJSON({
-//     url:"https://api.estadisticasbcra.com/usd_of_minorista",
-//     dataType:'json',
-//     Authorization:' BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ',
-//     success: function (data){ 
-//         cantenidoJson= data.result,
-//         console.log(data)
-//     }
-// })}
- /*$("#slide1").click(() => {
-    $.get({ url: "https://mindicador.cl/api/dolar" }, function (data) {
-        $.each (data,()=>{
-            console.log(data.fecha)
-    
-        } ); 
+
+const TOKEN_AUTH = 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ'
+/* $("#slide1").click(()=> leerApi())
+function leerApi() {
+    $.ajax({
+        url: 'https://api.estadisticasbcra.com/usd_of',
+        type: 'GET',
+        headers: {Authorization: $`Bearer ${TOKEN_AUTH}`},
         
+        success: function (data) {
+            let cantenidoJson = data;
+            console.table(cantenidoJson)
+        },
+        error: function () {
+            alert("Hubo un error");
+            console.error("Error al leer la API");
+        }
+    })} 
+    api2= "https://api-dolar-argentina.herokuapp.com/"*/
+
+     $("#slide1").click(()=> leerApi())
+ function leerApi() {
+    $.ajax({
+        url: "https://api-dolar-argentina.herokuapp.com/api/dolaroficial",
+        type: 'GET',
+      
         
-    })
-}) */
-
-$("#slide1").click(()=>{$.ajax( {
-    url:"https://api.estadisticasbcra.com/usd_of_minorista", 
-    type:"GET",
-    Authorization: 'BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ',
-    success:function(data){
-        $.each(data,()=>{
-            console.log(data), console.table(data.v)
-        })
-    }})})
-
-
-
-
-/* $("#slide1").click(()=>{$.get({
-    url:"https://api.estadisticasbcra.com/usd_of_minorista",
-    dataType:'json',
-    Authorization:' BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ',
-    success: function (data){ 
-        cantenidoJson= data.result,
-        console.log(data)
+        success: function (data) {
+            let cantenidoJson = data;
+            console.table(cantenidoJson)
+        },
+        error: function () {
+            alert("Hubo un error");
+            console.error("Error al leer la API");
+        }
+    })} 
+   /* api2= "https://api-dolar-argentina.herokuapp.com/"*/
+    //funciones gráficas
+    $("#slide1").css("display","none")
+$(".bot").click (()=>{
+    $(".mensaje").fadeOut("slow"),$("#slide1").fadeIn("slow")
+});
+$('#gr').change(function(){
+    if($(this).is(":checked")) {
+        $('.change').addClass('red');$("#d1,#d2,#d3,#d4,#d5,#d6 ").css("color","black")
+    } else {
+        $('.change').removeClass('red');$("#d1,#d2,#d3,#d4,#d5,#d6").css("color"," rgb(223, 221, 219)")
     }
-})}) */
-    
- 
-
-//,{autenticator:""}$.getJSON("https://mindicador.cl/api/dolar",function(data){console.log(data)})
-/*  $.get({
-         url:,
-        method:"get",
-        Datatype:'Json',
-        Authorization:' BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ',
-        susess: function(data){
-             contenidoJson=data.results,
-            console.log(data)}
-
-
-
-            https://api.estadisticasbcra.com/usd_of_minorista
-    }) */
+});
