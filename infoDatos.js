@@ -10,3 +10,4 @@ https://www.argentina.gob.ar/coronavirus/vacuna/aplicadas
 
 https://www.batimes.com.ar/news/argentina/shipment-of-900000-sinopharm-vaccine-doses-arrives-in-argentina.phtml
 */
+[{ "aplicadas":5935146,"valorpeso":110}]

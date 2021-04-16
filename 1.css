@@ -154,6 +154,7 @@ height: 2vw;
 }
 
 #seccion-grafico{
+   
     margin-top: 3rem;margin-left: 2rem;
     overflow-x: auto;
     display: none;
@@ -223,6 +224,7 @@ height: 2vw;
     
 }
 #informe{
+    margin-left: 2rem;
     display: none;margin-top: 3rem;
     width:100vw;
     flex-direction: column;
