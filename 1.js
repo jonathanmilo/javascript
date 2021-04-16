@@ -86,7 +86,7 @@ $.getJSON("/1.json", (response, status)=> {
                 for (let i in contenido) {    
                     let  valorPeso =contenido.valorPeso;
                         aplicadas = contenido[i].apli;
-                        
+                        console.log(aplicadas)
                 }
     } else {
           console.log("error al leer el json")
