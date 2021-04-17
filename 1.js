@@ -73,14 +73,14 @@ $("#input_ValorVacuna").change(
             }
         );
 let aplicadas= 1;
+//http://datos.gob.ar/api/3/action/package_show?id=<id_del_dataset>
+//https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19VacunasAgrupadas.csv.zip
 $.getJSON("/1.json", (response, status)=> {
     if (status === "success") {
             let contenido = response;
             console.log(contenido) 
                 for (let i in contenido) {    
-                   
                         aplicadas = contenido[i].apli;
-                        console.log(aplicadas)
                 }
     } else {
           console.log("error al leer el json")
@@ -89,15 +89,13 @@ $.getJSON("/1.json", (response, status)=> {
 let dolarBluePrecio = 0; let dolarBlueNombre = '';let valorPeso=0;
     //creating a new object by AJAX calling 
 $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valoresprincipales", }).done((data) => { 
-        console.log(dolarBlueNombre);
-         console.log(dolarBluePrecio); 
          dolarBluePrecio = data[1].casa.compra 
          dolarBlueNombre = data[1].casa.nombre 
-         valorPeso=dolarBluePrecio
-         console.log(dolarBlueNombre); console.log(dolarBluePrecio);})
+         valorPeso=Number(dolarBluePrecio)
+        ;})
          .fail((error) => { console.log(error); }); 
-         valorPeso = dolarBluePrecio;
-        localStorage.setItem("ValorPeso",dolarBluePrecio);
+ valorPeso = Number(dolarBluePrecio);
+ localStorage.setItem("ValorPeso",Number(dolarBluePrecio));
         
 let censo= 44939000;
 //aplica funciones a todos los datos
