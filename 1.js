@@ -91,11 +91,11 @@ let dolarBluePrecio = 0; let dolarBlueNombre = '';let valorPeso=0;
 $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valoresprincipales", }).done((data) => { 
          dolarBluePrecio = data[1].casa.compra 
          dolarBlueNombre = data[1].casa.nombre 
-         valorPeso=Number(dolarBluePrecio)
+         valorPeso=parseInt(dolarBluePrecio)
         ;})
          .fail((error) => { console.log(error); }); 
- valorPeso = Number(dolarBluePrecio);
- localStorage.setItem("ValorPeso",Number(dolarBluePrecio));
+ valorPeso = dolarBluePrecio;
+ localStorage.setItem("ValorPeso",parseInt(dolarBluePrecio));
         console.log(valorPeso)
 let censo= 44939000;
 //aplica funciones a todos los datos
@@ -116,8 +116,8 @@ function DATOS(){
 
     dosis_deuda_neta=Number(deudaNeta/ValorVacuna).toFixed(1);
     dosis_deuda_total=Number(deudaTotal/ValorVacuna).toFixed(1);
-    deuda_neta_pesos=Number(deudaNeta*valorPeso).toFixed(2);
-    deuda_total_pesos=Number(deudaTotal*valorPeso).toFixed(2);
+    deuda_neta_pesos=Number(deudaNeta*Number(valorPeso)).toFixed(2);
+    deuda_total_pesos=Number(deudaTotal*Number(valorPeso)).toFixed(2);
 
     var info= [ opcionPresidencias, deudaNeta ,deudaTotal, valorPeso,tipoVacuna, ValorVacuna,deuda_neta_pesos,deuda_total_pesos,dosis_deuda_neta,dosis_deuda_total];
     localStorage.setItem("info", JSON.stringify(info))
@@ -129,8 +129,8 @@ function grafica(){
    
     $("#seccion-grafico").css("display","flex");
     $("#personas").css("height",""+censo *0.000002+"px"+""); 
-    debugger
-    ()=>{
+   
+    ()=>{debugger
          $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.00000005+ "px"+""),
          $("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
          $("#a-km-usd").css("height",""+dosis_deuda_total * 0.00000002+"px"+""),
