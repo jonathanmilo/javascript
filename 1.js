@@ -64,13 +64,7 @@ $("#input_tipoVacuna").change(()=>{
                     localStorage.setItem("valorVacuna",ValorVacuna);
                 break;    }
         }})
-  //aplica cambios según opción de valor del peso.
-    localStorage.setItem("ValorPeso",($("#valor_delPeso").val()));
-    valorPeso=localStorage.getItem("ValorPeso");
-        $("#valor_delPeso").change(()=>{ 
-             valorPeso=$("#valor_delPeso").val();
-            localStorage.setItem("ValorPeso",valorPeso);
-         });
+  
 //aplica cambios al Storage según tipo de vacuna.
 $("#input_ValorVacuna").change(
         ()=>{
@@ -84,14 +78,27 @@ $.getJSON("/1.json", (response, status)=> {
             let contenido = response;
             console.log(contenido) 
                 for (let i in contenido) {    
-                    let  valorPeso =contenido.valorPeso;
+                   
                         aplicadas = contenido[i].apli;
                         console.log(aplicadas)
                 }
     } else {
           console.log("error al leer el json")
     }
-    })   
+    });
+let dolarBluePrecio = 0; let dolarBlueNombre = '';let valorPeso=0;
+    //creating a new object by AJAX calling 
+$.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valoresprincipales", }).done((data) => { 
+        console.log(dolarBlueNombre);
+         console.log(dolarBluePrecio); 
+         dolarBluePrecio = data[1].casa.compra 
+         dolarBlueNombre = data[1].casa.nombre 
+         valorPeso=dolarBluePrecio
+         console.log(dolarBlueNombre); console.log(dolarBluePrecio);})
+         .fail((error) => { console.log(error); }); 
+         valorPeso = dolarBluePrecio;
+        localStorage.setItem("ValorPeso",dolarBluePrecio);
+        
 let censo= 44939000;
 //aplica funciones a todos los datos
 function DATOS(){
@@ -124,7 +131,7 @@ function grafica(){
    
     $("#seccion-grafico").css("display","flex");
     $("#personas").css("height",""+censo *0.000002+"px"+""); 
-  
+    
     if($("#valor_delPeso").val()>0){
          $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.00000005+ "px"+""),
          $("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
@@ -154,36 +161,21 @@ function informar(){switch($("#opcionPresidencias").val()){
     default:$("#informe").html("<p>"+ "sin información"+ "</p>")} 
 };
 
-//const TOKEN_AUTH = 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDk2ODQzODIsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqb25hdGhhbm1heWFuQGdtYWlsLmNvbSJ9.P90GEetQRc5JVlnVdLtPu-HF2p9bDuRa5gmtcdiX424QgXNP4fQR43hKbD1CfrZY99RFkknVwvJnw6LdmwgYgQ'
-/* $("#slide1").click(()=> leerApi())
-function leerApi() {
-    $.ajax({
-        url: 'https://api.estadisticasbcra.com/usd_of',
-        type: 'GET',
-        headers: {Authorization: $`Bearer ${TOKEN_AUTH}`},
-        
-        success: function (data) {
-            let cantenidoJson = data;
-            console.table(cantenidoJson)
-        },
-        error: function () {
-            alert("Hubo un error");
-            console.error("Error al leer la API");
-        }
-    })} 
-    api2= "https://api-dolar-argentina.herokuapp.com/"*/
+
 
     //funciones gráficas
 $("#slide1").css("display","none")
 $(".bot").click (()=>{
+    $("#valorpesoinformado").text("actual valor del dolar blue "+"$"+valorPeso);
      $(".mensaje").fadeOut("slow"),$("#slide1").fadeIn("slow")
     });
 $('#gr').change(function(){
-    if($(this).is(":checked")) {
+//$(".change").classList.toggle("red")
+     if($(this).is(":checked")) {
         $('.change').addClass('red'),
         $("#d1,#d2,#d3,#d4,#d5,#d6 ").css("color","black")
     } else {
-        $('.change').removeClass('red'),
+        $('.change').removeClass('red',20000),
         $("#d1,#d2,#d3,#d4,#d5,#d6").css("color"," rgb(223, 221, 219)")
-    }
+    } 
 });

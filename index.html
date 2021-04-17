@@ -14,10 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet"> 
     <script defer src="./infoDatos.js"></script>
     <script defer src="./1.js"></script>
-    
     <link rel="stylesheet" href="1.css">
-    
-    
+
 </head>
 <body >
   <input type="checkbox" id="gr" value="supress">
@@ -35,8 +33,6 @@
       <option value="Cristina Fernandez de Kirchner">Cristina Fernandez de Kirchner</option>
       </select>
      </div>
-
-  
     <footer for="input_tipoVacuna">seleccione la vacuna</footer>
     <select  id="input_tipoVacuna"  >
       <option value="pfeizer"selected>Pfeizer</option>
@@ -47,8 +43,8 @@
     <footer id="fooValorVacuna" for="input_ValorVacuna">valor de la vacuna (usd$)</footer>
     <input type="number"    id="input_ValorVacuna">
      
-      <footer for="valor_delPeso">valor del tipo de cambio del peso</footer>
-      <input type="number" min="1" value="90.30" step="0.01" id="valor_delPeso" >
+      <footer id="valorpesoinformado" for="valor_delPeso"></footer>
+      <p ></p>
       <button class="boton"  onclick="DATOS(),informar()" >simular</button> 
    
   </div>
