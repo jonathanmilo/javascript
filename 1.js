@@ -129,14 +129,13 @@ function grafica(){
    
     $("#seccion-grafico").css("display","flex");
     $("#personas").css("height",""+censo *0.000002+"px"+""); 
-   
-    ()=>{debugger
+  
+    
          $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.00000005+ "px"+""),
          $("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
          $("#a-km-usd").css("height",""+dosis_deuda_total * 0.00000002+"px"+""),
          $("#n-km-usd").text(""+(Number(dosis_deuda_total)).toLocaleString("en-US")+"dosis"+"");
          $("#aplicadas_actuales").css("height",""+aplicadas* 0.000009+"px"+"");
-        
         $("#d1").text(""+"usd"+(Number(deudaNeta)).toLocaleString("en-US")+"");
         $("#d2").text(""+"usd"+(Number(deudaTotal)).toLocaleString("en-US")+"");
         $("#d3").text(""+(Number(dosis_deuda_neta)).toLocaleString("en-US")+"dosis"+"");
@@ -145,7 +144,7 @@ function grafica(){
         $("#d6").text(""+"$"+(Number(deuda_total_pesos)).toLocaleString("en-US")+"");
         $("#aplicadasNumero").text(""+(Number(aplicadas)).toLocaleString("en-US")+"");
         $("#personas_N").text(""+(Number(censo)).toLocaleString("en-US")+"");
-    };
+   
 
 }
 
