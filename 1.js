@@ -172,8 +172,10 @@ $('#gr').change(function(){
      if($(this).is(":checked")) {
         $('.change').addClass('red'),
         $("#d1,#d2,#d3,#d4,#d5,#d6 ").css("color","black")
+        $(".a").css("color","black")
     } else {
         $('.change').removeClass('red',20000),
         $("#d1,#d2,#d3,#d4,#d5,#d6").css("color"," rgb(223, 221, 219)")
+        $(".a").css("color","#fff")
     } 
 });
