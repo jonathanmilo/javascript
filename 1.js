@@ -75,7 +75,7 @@ $("#input_ValorVacuna").change(
 let aplicadas= 1;
 //http://datos.gob.ar/api/3/action/package_show?id=<id_del_dataset>
 //https://sisa.msal.gov.ar/datos/descargas/covid-19/files/Covid19VacunasAgrupadas.csv.zip
-$.getJSON("/1.json", (response, status)=> {
+$.getJSON("./1.json", (response, status)=> {
     if (status === "success") {
             let contenido = response;
             console.log(contenido) 
