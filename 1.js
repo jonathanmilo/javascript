@@ -96,7 +96,7 @@ $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valorespr
          .fail((error) => { console.log(error); }); 
  valorPeso = Number(dolarBluePrecio);
  localStorage.setItem("ValorPeso",Number(dolarBluePrecio));
-        
+        console.log(valorPeso)
 let censo= 44939000;
 //aplica funciones a todos los datos
 function DATOS(){
@@ -129,13 +129,14 @@ function grafica(){
    
     $("#seccion-grafico").css("display","flex");
     $("#personas").css("height",""+censo *0.000002+"px"+""); 
-    
-    if($("#valor_delPeso").val()>0){
+    debugger
+    ()=>{
          $("#a-km-pe").css("height",""+dosis_deuda_neta * 0.00000005+ "px"+""),
          $("#n-km-p").text(""+Number((dosis_deuda_neta)).toLocaleString("en-US")+ "dosis"+""); 
          $("#a-km-usd").css("height",""+dosis_deuda_total * 0.00000002+"px"+""),
          $("#n-km-usd").text(""+(Number(dosis_deuda_total)).toLocaleString("en-US")+"dosis"+"");
          $("#aplicadas_actuales").css("height",""+aplicadas* 0.000009+"px"+"");
+        
         $("#d1").text(""+"usd"+(Number(deudaNeta)).toLocaleString("en-US")+"");
         $("#d2").text(""+"usd"+(Number(deudaTotal)).toLocaleString("en-US")+"");
         $("#d3").text(""+(Number(dosis_deuda_neta)).toLocaleString("en-US")+"dosis"+"");
