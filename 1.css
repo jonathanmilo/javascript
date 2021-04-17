@@ -263,7 +263,7 @@ background:#26282B;
 box-shadow: 4px 4px 15px #18181a, -4px -4px 15px #f7f7f7;
 margin-top: 3%;
 }
-.menu {position: fixed;width: 100vw; background: black; height: 2rem;}
+.menu {position: fixed;width: 100%; background: black; height: 2rem;}
 .caja{
     display: inline-block;
     position: absolute;
