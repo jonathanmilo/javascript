@@ -98,12 +98,7 @@ $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valorespr
  localStorage.setItem("ValorPeso",parseInt(dolarBluePrecio));
         
 let censo= 44939000;
-api="https://datos.gob.ar/api/3/action/package_show?id=salud_67f369fb-2b03-4f95-b751-9890bd3a7f38"
-$.getJSON(src=api,(respuesta,estado)=>{ 
-    if(estado==="sucess"){ 
-        let json=respuesta;
-        console.log(json)
-    }else{console.log("error en api")}})
+
 
 //aplica funciones a todos los datos
 function DATOS(){
