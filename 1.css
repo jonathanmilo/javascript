@@ -201,7 +201,7 @@ font-size: xx-large;
     font-family: karantina;
     color: rgba(0, 0, 0, 0.74);
     font-style: oblique;
-    font-size: 1.2rem;}#informe ol :last-child{ margin-left: 10%;}
+    font-size:1.2rem;}#informe ol :last-child{ margin-left: 10%;}
 @media only screen and (max-width: 767px) {
     h1,h2{font-size: 1.5rem;}
     .mensajemovil{font-size: 1.1rem; }
@@ -234,6 +234,7 @@ font-size: xx-large;
     transform: translateX(100%);
 }
 #informe li{list-style: none;
+    font-size: 2rem;
 position: relative;
 display: grid;
 width: fit-content;
@@ -244,6 +245,7 @@ margin-left: 1%; }
 #informe p{
     display: inline-flex;
     justify-content: center;
+
 }
 #informe ol img{
     width: 15vw;
