@@ -78,7 +78,7 @@ let aplicadas= 1;
 $.getJSON(src="./1.json", (response, status)=> {
     if (status === "success") {
             let contenido = response;
-            console.log(contenido) 
+             
                 for (let i in contenido) {    
                         aplicadas = contenido[i].apli;
                 }
@@ -87,7 +87,7 @@ $.getJSON(src="./1.json", (response, status)=> {
     }
     });
 let dolarBluePrecio = 0; let dolarBlueNombre = '';let valorPeso=0;
-    //creating a new object by AJAX calling 
+  
 $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valoresprincipales", }).done((data) => { 
          dolarBluePrecio = data[1].casa.compra 
          dolarBlueNombre = data[1].casa.nombre 
@@ -96,8 +96,15 @@ $.ajax({ method: "GET", url: "https://www.dolarsi.com/api/api.php?type=valorespr
          .fail((error) => { console.log(error); }); 
  valorPeso = dolarBluePrecio;
  localStorage.setItem("ValorPeso",parseInt(dolarBluePrecio));
-        console.log(valorPeso)
+        
 let censo= 44939000;
+api="https://datos.gob.ar/api/3/action/package_show?id=salud_67f369fb-2b03-4f95-b751-9890bd3a7f38"
+$.getJSON(src=api,(respuesta,estado)=>{ 
+    if(estado==="sucess"){ 
+        let json=respuesta;
+        console.log(json)
+    }else{console.log("error en api")}})
+
 //aplica funciones a todos los datos
 function DATOS(){
     $(".ir").css("display","flex");  
