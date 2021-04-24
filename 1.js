@@ -102,7 +102,7 @@ let censo= 44939000;
 
 //aplica funciones a todos los datos
 function DATOS(){
-    $(".ir").css("display","flex");  
+    $(".ir").css("display","flex"); 
    
             if(localStorage.getItem("presidente")=="Mauricio Macri"){
                     console.log(macri.presidente),
